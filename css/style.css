@@ -48,6 +48,7 @@ body {
 
 .hideuntilportrait {
     display: none;
+    text-style: italic;
 }
 
 @media only screen and (max-width: 1000px) {
