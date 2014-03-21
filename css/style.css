@@ -1,0 +1,85 @@
+body {
+    color: #fff;
+    font-family: Verdana, Arial, sans-serif;
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.redbox {
+    background-color: red;
+    float: left;
+    min-height: 350px;
+    width: 46%;
+    padding: 2%;
+}
+
+.bluebox {
+    background-color: blue;
+    float: right;
+    min-height: 350px;
+    width: 46%;
+    padding: 2%;
+}
+
+.buttonpusher {
+    background-color: green;
+    box-shadow: 1px 1px 3px #fff;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    outline: 1px solid red;
+    padding: 4%;
+    text-decoration: none;
+}
+
+.buttonpusher:hover {
+    background-color: greenyellow;
+    color: blue;
+    outline-color: blue;
+}
+
+.hiddentext {
+    color: yellow;
+    display: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.hideuntilportrait {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    
+    .redbox, .bluebox {
+        text-align: center;
+        float: none;
+        min-height: 300px;
+        width: 96%;
+    }
+    
+    .hiddentext img {
+        height: 200px;
+    }
+    
+} /* end max-width: 1000px */
+
+@media only screen and (max-width: 700px) {
+    
+    .redbox {
+        min-height: 160px;
+    }
+    
+    .hiddentext img {
+        height: 175px;
+    }    
+    
+} /* end max-width: 700px */
+
+@media only screen and (max-width: 400px) {
+    
+    .hideuntilportrait {
+        display: block;
+    }
+} /* end max-width: 400px */
